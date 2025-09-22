@@ -39,10 +39,10 @@ ELE AI算法大赛赛道二：智慧骑士—消防隐患识别比赛的参考�
   python qwen25_llm_lora_infer_v6.py 
   ```
 5.  训练过程：
-![alt text](image.png)
+![alt text](train.png)
     
 6.  预测结果：
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](predict1.png)
+![alt text](predict2.png)
 
 
