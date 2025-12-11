@@ -26,22 +26,28 @@ ELE AI算法大赛赛道二：智慧骑士—消防隐患识别比赛的参考�
   ```bash
   python data_process.py 
   ```
-2. 下载多模态大模型：
+2. 下载多模态大模型qwen
   ```bash
   python download_qwen.py 
   ```
-3. 训练模型：  
+  进一步处理数据（构建符合微调模板的数据格式，带有prompt描述、配对图片和标签的json数据，同时剔除脏数据）
+  ```bash
+  python txt2json.py 
+  ```
+3. 训练模型（RTX3090，得到模型如checkpoint-2550）：  
   ```bash
   python qwen25_llm_lora_train_v6.py 
   ```
-4. 模型推理和预测：
+4. 模型推理和预测（输出每张图片对应的消防安全隐患类型及危险程度到txt里）：
   ```bash
   python qwen25_llm_lora_infer_v6.py 
   ```
 5.  训练过程：
+
 ![alt text](train.png)
     
 6.  预测结果：
+
 ![alt text](predict1.png)
 ![alt text](predict2.png)
 
